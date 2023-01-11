@@ -1,0 +1,28 @@
+{
+  "name": "node-mailing-list-challenge",
+  "version": "1.0.0",
+  "description": "_**Credit:** This challenge was created by [Techtonica](https://github.com/Techtonica/curriculum). You can find the original [here](https://github.com/Techtonica/curriculum/blob/main/projects/mailing-list-rest-api.md)._",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev":"nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vanipriyaarun/Node-mailing-list-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vanipriyaarun/Node-mailing-list-challenge/issues"
+  },
+  "homepage": "https://github.com/Vanipriyaarun/Node-mailing-list-challenge#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
