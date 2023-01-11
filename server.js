@@ -7,6 +7,17 @@ const PORT = process.env.PORT || 5000;
 
 const mailList = JSON.parse(fs.readFileSync("mailList.json", "utf-8"));
 
+const routes={
+    "/lists":"all the existing list names", 
+  "/lists/:name" : "GET single list",
+"/lists/:name" : "DELETE single list", 
+"/lists/:name": "update single list" ,
+"/lists/:name/members": "POST (add) email into the list" 
+}
+app.get("/", (req, res)=> {
+  res.send(routes);
+});
+
 // `/lists` - fetch all the existing list names
 app.get("/lists", (req, res) => {
   res.json(mailList.map((c) => c.name));
